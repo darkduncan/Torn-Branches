@@ -1,1 +1,54 @@
+# Jekyll Configuration
+# Site settings
+title: Torn-Branches
+description: A Jekyll site
+baseurl: ""
+url: "https://darkduncan.github.io/Torn-Branches"
 
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude these files from the build
+exclude:
+  - .jekyll-cache
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections_dir: collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:slug/
+
+# Permalinks
+permalink: /:year/:month/:day/:slug/
+
+# Pagination (if using jekyll-paginate)
+paginate: 10
+paginate_path: "/page:num/"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
