@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Jekyll Post"
+title: "My First Jekyll Post. Rage quit incoming"
 date: 2026-06-27 12:00:00 -0000
 categories: blogging updates
 ---
