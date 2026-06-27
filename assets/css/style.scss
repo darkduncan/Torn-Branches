@@ -1,0 +1,112 @@
+---
+---
+
+// Custom styles for Jekyll minimal theme blog
+
+$content-width: 800px;
+$spacing-unit: 30px;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+// Colors
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #2a7ae2;
+$link-color: $brand-color;
+$link-hover-color: darken($link-color, 15%);
+$border-color: #e8e8e8;
+
+// Import Jekyll theme
+@import "minimal";
+
+// Custom post styles
+.post {
+  margin-bottom: 2em;
+}
+
+.post-header {
+  margin-bottom: 2em;
+}
+
+.post-title {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.post-meta {
+  font-size: 0.875em;
+  color: #666;
+}
+
+.post-content {
+  font-size: 1.1em;
+  line-height: 1.7;
+
+  h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.75em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  pre {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+}
+
+.post-footer {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $border-color;
+}
+
+.tags {
+  font-size: 0.9em;
+
+  .tag {
+    margin-right: 0.5em;
+
+    a {
+      display: inline-block;
+      background-color: #f4f4f4;
+      padding: 0.25em 0.75em;
+      border-radius: 20px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $link-color;
+        color: white;
+      }
+    }
+  }
+}
+
+// Navigation
+.site-nav {
+  margin: 2em 0;
+
+  a {
+    margin-right: 1.5em;
+  }
+}
+
+// Footer
+.site-footer {
+  margin-top: 3em;
+  padding: 2em 0;
+  border-top: 1px solid $border-color;
+  background-color: #f4f4f4;
+  font-size: 0.9em;
+}
