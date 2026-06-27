@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to Torn Branches"
+title: "A new home for an old blog"
 date: 2026-06-27
 author: darkduncan
 tags: [welcome, blog]
