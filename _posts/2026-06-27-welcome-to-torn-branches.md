@@ -6,7 +6,7 @@ author: darkduncan
 tags: [welcome, blog]
 ---
 
-Welcome to **Torn Branches** – a continuation of a personal blog formally updated at </https://tornbranches.blogspot.com>
+Welcome to **Torn Branches** – a continuation of a personal blog formally updated at [Torn Branches Blogspot]
 
 ## Getting Started
 
@@ -41,3 +41,6 @@ end
 4. Customize the CSS in `assets/css/style.scss`
 
 Happy blogging! 🚀
+
+
+[Torn Branches Blogger]: https://www.tornbranches.blogspot.com
