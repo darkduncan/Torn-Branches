@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Latest Posts
+
 
 {% for post in site.posts limit:5 %}
   <div class="post-preview">
