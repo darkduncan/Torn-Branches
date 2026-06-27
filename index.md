@@ -2,10 +2,6 @@
 layout: default
 ---
 
-# Welcome to {{ site.title }}
-
-{{ site.description }}
-
 ## Latest Posts
 
 {% for post in site.posts limit:5 %}
