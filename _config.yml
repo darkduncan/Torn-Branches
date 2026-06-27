@@ -2,7 +2,7 @@ title: Torn Branches
 description: A blog about development and ideas
 url: "https://darkduncan.github.io/Torn-Branches"
 baseurl: "/Torn-Branches"
-theme: jekyll-theme-primer
+theme: jekyll-theme-midnight
 
 # Jekyll settings
 markdown: kramdown
