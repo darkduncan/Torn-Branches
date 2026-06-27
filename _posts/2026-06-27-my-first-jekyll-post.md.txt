@@ -1,4 +1,8 @@
+yaml---
 layout: post
-title: "POST-TITLE"
-date: 2026-06-27 hh:mm:ss -0000
-categories: CATEGORY-1 CATEGORY-2
+title: "My First Jekyll Post"
+date: 2026-06-27 12:00:00 -0000
+categories: blogging updates
+---
+
+Write your post content here using Markdown syntax.
