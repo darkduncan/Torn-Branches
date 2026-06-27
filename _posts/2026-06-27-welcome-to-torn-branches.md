@@ -6,7 +6,7 @@ author: darkduncan
 tags: [welcome, blog]
 ---
 
-Welcome to **Torn Branches** – a blog exploring ideas, development, and the branches we take in life and code.
+Welcome to **Torn Branches** – a continuation of a personal blog formally updated at https://tornbranches.blogspot.com/.
 
 ## Getting Started
 
