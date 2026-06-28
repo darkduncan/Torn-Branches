@@ -105,6 +105,20 @@ html, body {
 .post a:hover {
   color: darken($text, 10%);
 }
+/* Also ensure the "View all posts" / archive link uses the theme color (prevent default blue/purple) */
+a[href$="/archive/"],
+a[href$="/archive"] {
+  color: $text;
+  text-decoration: none;
+}
+a[href$="/archive/"]:visited,
+a[href$="/archive"]:visited {
+  color: $text;
+}
+a[href$="/archive/"]:hover,
+a[href$="/archive"]:hover {
+  color: darken($text, 10%);
+}
 .post-content {
   margin-top: $rhythm;
   font-family: $body-font;
