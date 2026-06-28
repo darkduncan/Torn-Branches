@@ -71,17 +71,37 @@ html, body {
 }
 /* Title links: handle both structures (link inside .post-title or link itself has .post-title),
    and ensure visited links keep the same color so the browser doesn't show default purple. */
-.post-preview .post-title a,
-.post .post-title a,
+.post-preview .post-title a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post .post-title a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
 .post-preview a.post-title,
-.post a.post-title,
-.post-preview .post-title a:link,
-.post .post-title a:link,
-.post-preview .post-title a:visited,
-.post .post-title a:visited,
-.post-preview a.post-title:link,
-.post a.post-title:link,
-.post-preview a.post-title:visited,
+.post a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post-preview .post-title a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post .post-title a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post-preview .post-title a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post .post-title a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post-preview a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
+.post-preview a.post-title:visited {
+  color: $post-title;
+  text-decoration: none
 .post a.post-title:visited {
   color: $post-title;
   text-decoration: none;
@@ -90,7 +110,7 @@ html, body {
 .post .post-title a:hover,
 .post-preview a.post-title:hover,
 .post a.post-title:hover {
-  color: darken($post-title, 0%);
+  color: darken($post-title, 5%);
 }
 .post-content {
   margin-top: $rhythm;
