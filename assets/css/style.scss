@@ -1,174 +1,148 @@
-// ─── Tokens ───────────────────────────────────────────────────────────────────
-
-$max-width:  760px;
-$rhythm:      24px;
-
+---
+---
+// Minima-inspired site stylesheet (compiled by Jekyll's Sass processor)
+// Design tokens
+$max-width: 760px;
+$rhythm: 24px;
 $body-font: "Georgia", "Times New Roman", serif;
-$ui-font:   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica", Arial, sans-serif;
-
-$color-bg:        #494d53;  // Dark grey page background
-$color-text:      #ede6dd;  // Warm off-white body text
-$color-amber:     #b97c41;  // Site title, post titles, links
-$color-muted:     #a8aca9;  // Meta text, blockquotes, footer
-$color-border:    #e9e9e9;  // Dividers
-$color-code-bg:   #f6f8fa;  // Code and pre blocks
-
-
-// ─── Base ─────────────────────────────────────────────────────────────────────
-
+$ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica", Arial, sans-serif;
+$body-bg: #494d53;
+$text: #ede6dd;
+$border: #e9e9e9;
+$code-bg: #f6f8fa;
+$site-title: #b97c41;
+$post-title: #b97c41;
+$muted: #a8aca9;
 html, body {
   height: 100%;
-  background: $color-bg;
-  color: $color-text;
+  background: $body-bg;
+  color: $text;
   font-family: $body-font;
-  font-size: 18px;
-  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-size: 18px;
 }
-
 .container {
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 $rhythm;
   box-sizing: border-box;
 }
-
-
-// ─── Header ───────────────────────────────────────────────────────────────────
-
+/* Header */
 .site-header {
+  border-bottom: 1px solid $border;
   padding: $rhythm 0;
-  border-bottom: 1px solid $color-border;
-
+  background: transparent;
   .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
-  // Big clickable site name top-left
   .site-title {
     margin: 0;
     font-family: $body-font;
     font-size: 2.5rem;
-
     a {
-      color: $color-amber;
+      color: $site-title;
       text-decoration: none;
     }
   }
-
-  // Nav links top-right
   .site-nav a {
-    color: $color-text;
+    color: $text;
     margin-left: 1rem;
+    text-decoration: none;
     font-family: $ui-font;
     font-size: 0.95rem;
-    text-decoration: none;
   }
 }
-
-
-// ─── Post list & post page ────────────────────────────────────────────────────
-
-.post-preview,
-.post {
+/* Post preview / content */
+.post-preview, .post {
   margin: $rhythm 0;
-
-  // Title: amber whether it's a plain element or a link, visited or not
-  .post-title,
-  a.post-title {
+  .post-title {
     font-size: 1.6rem;
     margin: 0.3rem 0;
-    color: $color-amber;
-    text-decoration: none;
-
-    &:visited { color: $color-amber; }
+    color: $post-title;
   }
-
   .post-meta {
-    color: $color-muted;
+    color: $muted;
     font-size: 0.9rem;
   }
 }
-
-// Keep visited post-title links amber, not default browser purple
+/* Title links: handle both structures (link inside .post-title or link itself has .post-title),
+   and ensure visited links keep the same color so the browser doesn't show default purple. */
 .post-preview .post-title a,
-.post .post-title a {
-  color: $color-amber;
+.post .post-title a,
+.post-preview a.post-title,
+.post a.post-title,
+.post-preview .post-title a:link,
+.post .post-title a:link,
+.post-preview .post-title a:visited,
+.post .post-title a:visited,
+.post-preview a.post-title:link,
+.post a.post-title:link,
+.post-preview a.post-title:visited,
+.post a.post-title:visited {
+  color: $post-title;
   text-decoration: none;
-
-  &:visited { color: $color-amber; }
 }
-
-
-// ─── Post body ────────────────────────────────────────────────────────────────
-
+.post-preview .post-title a:hover,
+.post .post-title a:hover,
+.post-preview a.post-title:hover,
+.post a.post-title:hover {
+  color: darken($post-title, 0%);
+}
 .post-content {
   margin-top: $rhythm;
   font-family: $body-font;
-  color: $color-text;
-
+  color: $text;
   h1, h2, h3 {
     line-height: 1.2;
     margin-top: $rhythm;
     margin-bottom: ($rhythm / 2);
   }
-
-  p { margin: 0 0 $rhythm; }
-
-  a {
-    color: $color-amber;
-    &:visited { color: $color-amber; }
+  p {
+    margin: 0 0 $rhythm 0;
   }
-
-  // Inline code snippet
+  a {
+    color: $text;
+  }
   code {
-    background: $color-code-bg;
+    background: $code-bg;
     padding: 0.15em 0.35em;
     border-radius: 3px;
     font-family: SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
     font-size: 0.95em;
   }
-
-  // Fenced code block
   pre {
-    background: $color-code-bg;
+    background: $code-bg;
     padding: 1rem;
-    border-radius: 6px;
     overflow-x: auto;
+    border-radius: 6px;
   }
-
   blockquote {
-    margin: 0 0 $rhythm;
+    border-left: 3px solid $border;
     padding-left: 1rem;
-    border-left: 3px solid $color-border;
-    color: $color-muted;
+    color: $muted;
+    margin: 0 0 $rhythm 0;
   }
 }
-
-
-// ─── Footer ───────────────────────────────────────────────────────────────────
-
+/* Footer */
 .site-footer {
   margin-top: 2.5rem;
   padding: 1.5rem 0;
-  border-top: 1px solid $color-border;
+  border-top: 1px solid $border;
   font-size: 0.95rem;
-  color: $color-muted;
+  color: $muted;
 }
-
-
-// ─── Mobile (under 640px) ─────────────────────────────────────────────────────
-
+/* Responsive */
 @media (max-width: 640px) {
-  html { font-size: 16px; }
-
   .site-header .header-inner {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .site-nav { margin-top: 0.5rem; }
+  .site-nav {
+    margin-top: 0.5rem;
+  }
+  html { font-size: 16px; }
 }
