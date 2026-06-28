@@ -90,7 +90,7 @@ html, body {
 .post .post-title a:hover,
 .post-preview a.post-title:hover,
 .post a.post-title:hover {
-  color: darken($post-title, 0%);
+  color: $post-title;
 }
 /* Ensure all links inside post previews and posts use the site's text color (prevent browser default blue/purple)
    Title links above are more specific and will keep $post-title as intended. */
