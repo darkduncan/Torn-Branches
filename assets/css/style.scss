@@ -11,11 +11,9 @@ $ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica", Ar
 
 $body-bg: #494d53;
 $text: #ede6dd;
-$muted: #6b6b6b;
-$link: #d9ccbf;
 $border: #e9e9e9;
 $code-bg: #f6f8fa;
-$site-title: #ece7d9;
+$site-title: #b97c41;
 $post-title: #b97c41;
 
 html, body {
@@ -29,9 +27,6 @@ html, body {
   font-size: 18px;
 }
 
-a {
-  color: $link;
-}
 
 .container {
   max-width: $max-width;
@@ -55,7 +50,7 @@ a {
   .site-title {
     margin: 0;
     font-family: $body-font;
-    font-size: 2rem;
+    font-size: 2.5rem;
     a {
       color: $site-title;
       text-decoration: none;
