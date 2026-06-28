@@ -1,46 +1,23 @@
 ---
 layout: post
-title: "A new home for an old blog"
-date: 2026-06-27
+title: "The good big guy"
+date: 2026-06-28
 author: darkduncan
-tags: [welcome, blog]
+tags: [gaming, art]
 ---
 
-Welcome to **Torn Branches** – a continuation of a personal blog formally updated at [Tornbranches.blogspot](https://tornbranches.blogspot.com/)
+A good big guy will always beat a good little guy. 
 
-## Getting Started
+A good game today will always be better than a good game yesterday. 
 
-This is your first post! You can edit or delete this file to add your own content. To create new posts, follow this naming convention:
+This is the foundation of data driven art. It is a natural offspring of the time value of money. 
 
-```
-_posts/YYYY-MM-DD-post-title.md
-```
+This is the challenge of time. It kills intention, and it changes people. 
 
-## Writing Posts
+I am not the person I was. Tomorrow I won't be me again.
 
-Posts are written in Markdown and support:
+Data driven art cannot overcome this because data is not reality. We pretend it is. 
 
-- **Bold** and *italic* text
-- Headers and lists
-- Code blocks
-- Links and images
+Data is a metaphor for a reality that existed in a point of time. It exists with all the biases that data collection usually presents.
 
-### Code Example
-
-```ruby
-def hello_world
-  puts "Welcome to Torn Branches!"
-end
-```
-
-## Next Steps
-
-1. Edit the `_config.yml` to customize your blog
-2. Add more posts in the `_posts/` directory
-3. Create an `about.md` page to tell visitors about yourself
-4. Customize the CSS in `assets/css/style.scss`
-
-Happy blogging! 🚀
-
-
-[Torn Branches Blogger]: https://www.tornbranches.blogspot.com
+A good new game beats a good old game. Today. But tomorrow who knows. If you trust the data, probably not. The treachery of data.
