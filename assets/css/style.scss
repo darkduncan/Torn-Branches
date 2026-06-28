@@ -94,15 +94,6 @@ html, body {
   }
 }
 
-// Keep visited post-title links amber, not default browser purple
-.post-preview .post-title a,
-.post .post-title a {
-  color: $color-amber;
-  text-decoration: none;
-
-  &:visited { color: $color-amber; }
-}
-
 
 // ─── Post body ─────────────────────────────────────────────────────────
 
@@ -115,11 +106,10 @@ html, body {
     line-height: 1.2;
     margin-top: $rhythm;
     margin-bottom: ($rhythm / 2);
+    color: $color-amber;
   }
 
   p { margin: 0 0 $rhythm; }
-
-  a { color: $color-amber; }
 
   // Inline code snippet
   code {
