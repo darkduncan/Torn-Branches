@@ -1,7 +1,4 @@
----
----
-
-// ─── Tokens ───────────────────────────────────────────────────────────
+// ─── Tokens ───────────────────────────────────────────────────────────────────
 
 $max-width:  760px;
 $rhythm:      24px;
@@ -17,7 +14,7 @@ $color-border:    #e9e9e9;  // Dividers
 $color-code-bg:   #f6f8fa;  // Code and pre blocks
 
 
-// ─── Base ───────────────────────────────────────────────────────────
+// ─── Base ─────────────────────────────────────────────────────────────────────
 
 html, body {
   height: 100%;
@@ -38,7 +35,7 @@ html, body {
 }
 
 
-// ─── Header ──────────────────────────────────────────────────────────
+// ─── Header ───────────────────────────────────────────────────────────────────
 
 .site-header {
   padding: $rhythm 0;
@@ -79,13 +76,15 @@ html, body {
 .post {
   margin: $rhythm 0;
 
-  // Title: amber whether it's a plain element or a link
+  // Title: amber whether it's a plain element or a link, visited or not
   .post-title,
   a.post-title {
     font-size: 1.6rem;
     margin: 0.3rem 0;
     color: $color-amber;
     text-decoration: none;
+
+    &:visited { color: $color-amber; }
   }
 
   .post-meta {
@@ -94,8 +93,17 @@ html, body {
   }
 }
 
+// Keep visited post-title links amber, not default browser purple
+.post-preview .post-title a,
+.post .post-title a {
+  color: $color-amber;
+  text-decoration: none;
 
-// ─── Post body ─────────────────────────────────────────────────────────
+  &:visited { color: $color-amber; }
+}
+
+
+// ─── Post body ────────────────────────────────────────────────────────────────
 
 .post-content {
   margin-top: $rhythm;
@@ -106,10 +114,14 @@ html, body {
     line-height: 1.2;
     margin-top: $rhythm;
     margin-bottom: ($rhythm / 2);
-    color: $color-amber;
   }
 
   p { margin: 0 0 $rhythm; }
+
+  a {
+    color: $color-amber;
+    &:visited { color: $color-amber; }
+  }
 
   // Inline code snippet
   code {
@@ -137,7 +149,7 @@ html, body {
 }
 
 
-// ─── Footer ──────────────────────────────────────────────────────────
+// ─── Footer ───────────────────────────────────────────────────────────────────
 
 .site-footer {
   margin-top: 2.5rem;
