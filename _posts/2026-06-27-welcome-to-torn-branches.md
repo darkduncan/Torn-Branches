@@ -5,6 +5,7 @@ date: 2026-06-28
 author: darkduncan
 tags: [gaming, art]
 ---
+##The good big guy
 
 A good big guy will always beat a good little guy. 
 
