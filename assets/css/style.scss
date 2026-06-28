@@ -85,6 +85,12 @@ a {
   }
 }
 
+/* Ensure links inside post titles use the post title color (anchors inherit global a{} otherwise) */
+.post-title a {
+  color: $post-title;
+  text-decoration: none;
+}
+
 .post-content {
   margin-top: $rhythm;
   font-family: $body-font;
