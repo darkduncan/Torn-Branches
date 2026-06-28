@@ -92,6 +92,19 @@ html, body {
 .post a.post-title:hover {
   color: darken($post-title, 0%);
 }
+/* Ensure all links inside post previews and posts use the site's text color (prevent browser default blue/purple)
+   Title links above are more specific and will keep $post-title as intended. */
+.post-preview a:link,
+.post-preview a:visited,
+.post a:link,
+.post a:visited {
+  color: $text;
+  text-decoration: none;
+}
+.post-preview a:hover,
+.post a:hover {
+  color: darken($text, 10%);
+}
 .post-content {
   margin-top: $rhythm;
   font-family: $body-font;
