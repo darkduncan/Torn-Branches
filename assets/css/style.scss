@@ -85,10 +85,15 @@ a {
   }
 }
 
-/* Ensure links inside post titles use the post title color (anchors inherit global a{} otherwise) */
-.post-title a {
+/* Make link selector more specific so it wins over the global `a {}` rule */
+.post-preview .post-title a,
+.post .post-title a {
   color: $post-title;
   text-decoration: none;
+}
+.post-preview .post-title a:hover,
+.post .post-title a:hover {
+  color: darken($post-title, 8%);
 }
 
 .post-content {
